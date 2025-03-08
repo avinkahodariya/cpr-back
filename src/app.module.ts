@@ -35,6 +35,8 @@ export class AppModule {
         'auth/google/callback',
         'auth/register',
         'auth/login',
+        'auth/facebook',
+        'auth/facebook/callback',
       ) // Exclude routes that don't require authentication
       .forRoutes('*'); // Apply globally or specify routes
   }
