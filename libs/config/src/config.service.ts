@@ -13,6 +13,10 @@ export class AppConfigService {
     const result = {
       uri: `mongodb+srv://${user}:${password}@${host}/${db}?retryWrites=true&w=majority`,
     };
+    console.log(
+      '🚀 ~ config.service.ts:16 ~ AppConfigService ~ getMongoConfig ~ result:',
+      result,
+    );
     return result;
   }
 
