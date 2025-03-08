@@ -17,10 +17,7 @@ async function bootstrap() {
   const configService = new ConfigService();
 
   app.useGlobalPipes(new ValidationPipe({ transform: true }));
-  app.enableCors({
-    origin: https://cpr-eight.vercel.app', // Your frontend URL
-    credentials: true,
-  });
+  app.enableCors();
   app.setGlobalPrefix('api');
 
   const reflector = app.get(Reflector);
