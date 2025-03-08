@@ -18,7 +18,7 @@ async function bootstrap() {
 
   app.useGlobalPipes(new ValidationPipe({ transform: true }));
   app.enableCors({
-    origin: 'http://localhost:3000', // Your frontend URL
+    origin: https://cpr-eight.vercel.app', // Your frontend URL
     credentials: true,
   });
   app.setGlobalPrefix('api');
