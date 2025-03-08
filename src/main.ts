@@ -10,6 +10,9 @@ import {
 } from '@nestjs/swagger';
 import { ErrorLoggingInterceptor } from './error-logging-interceptor.service';
 import { JwtAuthGuard } from './auth/jwt-auth.guard';
+import { config } from 'dotenv';
+
+config(); // Load .env variables at the start
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
